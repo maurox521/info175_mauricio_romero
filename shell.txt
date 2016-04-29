@@ -1,0 +1,8 @@
+maurox521"$NuevaCarpeta"  		         
+    cp -r "$CarpetaActual/*" "$NuevaCarpeta"     
+    cd "$NuevaCarpeta"                           
+    f=`date +%Y-%m-%d`					
+    full_path=$NuevaCarpeta				
+    archivo="${full_path##*/}"
+    rar -a "$f"_"archivo.rar" "$CarpeaActual"  
+    echo "Lista."
